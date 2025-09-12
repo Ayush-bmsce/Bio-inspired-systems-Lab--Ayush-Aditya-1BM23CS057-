@@ -6,12 +6,12 @@ def objective_function(x):
     return 2 * x - np.sin(x)
 
 # Parameters
-population_size = 100  # Population size
-mutation_rate = 0.1    # Mutation rate
-crossover_rate = 0.8  # Crossover rate
-num_generations = 500 # Number of generations
-lower_bound = -5      # Lower bound of the search space
-upper_bound = 5       # Upper bound of the search space
+population_size = 10  # Population size (updated to 10)
+mutation_rate = 0.15  # Mutation rate (updated to 0.15)
+crossover_rate = 0.15  # Crossover rate (updated to 0.15)
+num_generations = 5  # Number of generations (updated to 5)
+lower_bound = -5  # Lower bound of the search space
+upper_bound = 5   # Upper bound of the search space
 
 # Initialize Population (Random sequences for x in the given range)
 def initialize_population(pop_size, lower_bound, upper_bound):
@@ -91,3 +91,4 @@ best_solution, best_fitness = genetic_algorithm()
 # Output the best solution found
 print("Best solution (x value):", best_solution)
 print("Maximized fitness (f(x) value):", best_fitness)
+
