@@ -3,16 +3,6 @@ import random
 
 class CuckooSearch:
     def __init__(self, objective_func, bounds, n_nests=25, pa=0.25, max_iter=1000):
-        """
-        Cuckoo Search Algorithm
-        
-        Parameters:
-        - objective_func: Function to minimize
-        - bounds: List of tuples [(min, max)] for each dimension
-        - n_nests: Number of host nests (population size)
-        - pa: Discovery probability (probability of abandoning worst nests)
-        - max_iter: Maximum number of iterations
-        """
         self.objective_func = objective_func
         self.bounds = bounds
         self.n_nests = n_nests
